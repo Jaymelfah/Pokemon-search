@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/a738fb17fd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="search">
+        <input class="poke-search" placeholder="Search for your pokemon here" type="text" required>
+        <span><i id="search" class="fa-solid fa-magnifying-glass"></i></span>
+    </div>
+    <div class="error"><p>Sorry, your pokemon was not found in our database</p></div>
+
+    <section class="poke-container">
+        <img class="poke-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/106.png">
+        <div class="line"></div>
+        <div class="attributes">
+            <div>
+                <p id="name"><strong>Name</strong>: Hitmonlee</p>
+                <p id="type"><strong>Type</strong>: Fighting</p>
+            </div>
+            <div>
+                <p id="weight"><strong>Weight</strong>: 498</p>
+                <p id="height"><strong>Height</strong>: 15</p>
+            </div>
+        </div>
+        <div class="moves">
+            <h4>Moves</h4>
+            <ul id="move-list">
+                <li>mega-punch</li>
+                <li>double-kick</li>
+                <li>mega-kick</li>
+                <li>jump-kick</li>
+            </ul>
+        </div>
+    </section>
+   
+    <script src="./index.js"></script>
+</body>
+</html>
